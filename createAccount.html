@@ -1,0 +1,107 @@
+<?php ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/creatingAccount.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abe8564c6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header (Menu)-->
+    <div class="header">
+        <nav class="menu">
+            <div class="logo">GameCC</div>
+            <div class="games">Games
+                <div class="gSubMenu">
+                    <li><a href="">New Release</a></li>
+                    <li><a href="popularGame.php">Popular Games</a></li>
+                </div>
+            </div>
+            <div class="steam"><a href="steam.php">Steam</a></div>
+            <div class="playstation"><a href="playStation.php">PlayStation</a></div>
+            <div class="epicgames"><a href="epicGames.php">Epic Games</a></div>
+            <div class="support"><a href="">Support</a></div>
+            <div class="login"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</div>
+        </nav>
+    </div>
+
+    <!-- Login Drop Down-->
+    <div class="lCont">
+        <form action="PHP/login.php" method="POST">
+            <strong>Account:</strong><br>
+            <input type="text" class="acc" name="acc">
+            <strong>Password:</strong>
+            <input type="password" class="pwd" name="pwd">
+            <input type="submit" class="submit" name="submit" value="Log In"><br>
+            <a href="createAccount.html" class="createAcc">Create Account</a>
+        </form>
+    </div>
+
+    <!--Main Contents-->
+
+    <div class="mainCenter">
+        <div class="letf">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="center">
+
+        </div>
+        <div class="right">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="creatAcc">
+        <div class="container">
+            <form action="php/createAccount.php" method="POST" onsubmit="return loginValidation()">
+                <p>Account:</p>
+                <input type="text" id="userName" name="acc" required>
+                <p id="accValid"></p>
+                <p id="accValid2"></p>
+                <p>Password:</p>
+                <input type="password" id="userPwd" name="pwd" required>
+                <p>Confirm Password:</p>
+                <input type="password" id="confirmPwd" required>
+                <p id="pwdValid"></p>
+                <p>First Name:</p>
+                <input type="text" id="firstN" name="firstN" required>
+                <p id="fNValid"></p>
+                <p>Last Name:</p>
+                <input type="text" id="lastN" name="lastN" required>
+                <p id="lNValid"></p>
+                <p>Email:</p>
+                <input type="email" name="email" required>
+                <br>
+                <input class="creBtn" type="submit" name="submit" value="Create Account">
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footerTile">Game CC</div>
+            <div class="pInfo">Holden Chang</div>
+            <div class="email">Email: ncsm1752@naver.com</div>
+            <div class="insta"><a href="https://www.instagram.com/d.holden.chang/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></div>
+        </div>
+    </div>
+    <script src="JS/JQuery.js"></script>
+    <script src="JS/dropDown.js"></script>
+    <script src="JS/logInValidation.js"></script>
+    <script src="JS/images.js"></script>
+</body>
+
+</html>
