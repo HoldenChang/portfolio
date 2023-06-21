@@ -29,3 +29,20 @@
     font-size: 3vw;
     text-align: center;
 }
+.playSbtn{
+    padding: 0px;
+    width: 10vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.playSbtn:hover{
+    background-color: white;
+}
+.playSbtn a:hover{
+    color: black;
+}
+

@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Playstation</title>
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/playStation.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -30,7 +30,6 @@ session_start();
             <div class="steam"><a href="steam.php">Steam</a></div>
             <div class="playstation"><a href="playStation.php">PlayStation</a></div>
             <div class="epicgames"><a href="epicGames.php">Epic Games</a></div>
-            <div class="support"><a href="">Support</a></div>
             <div class="login">
                 <?php
                 if (isset($_SESSION['user'])) {
@@ -73,7 +72,7 @@ session_start();
                 <div class="psIntro2">
                     <p>Find More About PS5</p>
                     <p>And Its games</p>
-                    <button class="btn"><a href="https://www.playstation.com/en-ca" target="_bla">Find More</a></button>
+                    <button class="playSbtn"><a href="https://www.playstation.com/en-ca" target="_blank">Find More</a></button>
                 </div>
             </div>
         </div>
