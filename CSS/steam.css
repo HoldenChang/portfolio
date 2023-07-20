@@ -20,3 +20,19 @@
     width: 100%;
     height: 41vw;
 }
+.steambtn{
+    padding: 0px;
+    width: 15vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.steambtn:hover{
+    background-color: white;
+}
+.steambtn a:hover{
+    color: black;
+}

@@ -1,0 +1,73 @@
+.newGameContents{
+    width: 100%;
+    display: flex;
+}
+.leftDiv, .rightDiv{
+    display: flex;
+    width: 25vw;
+    align-items: center;
+}
+.leftDiv button, .rightDiv button{
+    font-size: 3vw;
+    border: none;
+    background: transparent;
+}
+.leftDiv button{
+    position: relative;
+    left: 5vw;
+}
+.rightDiv button{
+    position: absolute;
+    right: 5vw;
+}
+.centerDiv{
+    text-align: center;
+    width: 100%;
+}
+.centerDiv img{
+    width: 80%;
+}
+.centerDiv p{
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+}
+.centerDiv .page2{
+    display: none;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes slideRightAppear {
+    from {
+        transform: translateX(120%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
+@keyframes slideLeftAppear {
+    from {
+        transform: translateX(-120%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

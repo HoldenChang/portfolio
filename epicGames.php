@@ -23,7 +23,7 @@ session_start();
             <div class="logo"><a href="index.php">GameCC</a></div>
             <div class="games">Games
                 <div class="gSubMenu">
-                    <li><a href="">New Release</a></li>
+                    <li><a href="newGame.php">New Release</a></li>
                     <li><a href="popularGame.php">Popular Games</a></li>
                 </div>
             </div>
@@ -33,7 +33,7 @@ session_start();
             <div class="login">
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo $_SESSION['user'];
+                    echo "<button class='logOutBtn' onclick='logOutConfirm()'><i class='fa-solid fa-arrow-right-from-bracket'></i> ".$_SESSION['user']."</button>";
                 } else {
                     echo "<i class='fa-solid fa-arrow-right-to-bracket'></i>Login</div>";
                 }
@@ -71,7 +71,7 @@ session_start();
                     <p>EPIC GAMES has 1,548 games</p>
                     <p>Every two weeks You can have one or two free games!!</p>
                     <p>Click "EPIC GAMES" below to explore more about it</p>
-                    <button><a href="https://store.epicgames.com/en-US/" target="_blank"><img src="Images/button.PNG"
+                    <button class="epicBtn"><a href="https://store.epicgames.com/en-US/" target="_blank"><img src="Images/button.PNG"
                                 alt=""></a></button>
                 </div>
             </div>

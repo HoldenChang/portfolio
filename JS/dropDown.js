@@ -15,3 +15,11 @@ $(document).ready(()=>{
         });
     });
 });
+
+function logOutConfirm(){
+    var confirmation = window.confirm("Are sure you want to log out?");
+
+    if(confirmation){
+        window.location.href ="php/logOut.php";
+    }
+}

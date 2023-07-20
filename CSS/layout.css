@@ -9,6 +9,7 @@ body{
     background: black;
 }
 .header{
+    margin-top: 1.5vw;
     font-size: 2vw;
 }
 .header .menu{
@@ -38,6 +39,12 @@ body{
 /*Login*/
 .header .login i{
     margin: 0.25vw;
+}
+
+.header .logOutBtn{
+    background: transparent;
+    border: none;
+    font-size: 2vw;
 }
 
 /*Login drop down*/

@@ -23,8 +23,8 @@ session_start();
             <div class="logo"><a href="index.php">GameCC</a></div>
             <div class="games">Games
                 <div class="gSubMenu">
+                    <li><a href="newGame.php">New Release</a></li>
                     <li><a href="popularGame.php">Popular Games</a></li>
-                    <li><a href="">UpComing Games</a></li>
                 </div>
             </div>
             <div class="steam"><a href="steam.php">Steam</a></div>
@@ -33,9 +33,9 @@ session_start();
             <div class="login">
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo $_SESSION['user'];
+                    echo "<button class='logOutBtn' onclick='logOutConfirm()'><i class='fa-solid fa-arrow-right-from-bracket'></i> ".$_SESSION['user']."</button>";
                 } else {
-                    echo "<i class='fa-solid fa-arrow-right-to-bracket'></i>Login";
+                    echo "<i class='fa-solid fa-arrow-right-to-bracket'></i>Login</div>";
                 }
                 ?>
             </div>

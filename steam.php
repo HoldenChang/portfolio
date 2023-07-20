@@ -23,7 +23,7 @@ session_start();
             <div class="logo"><a href="index.php">GameCC</a></div>
             <div class="games">Games
                 <div class="gSubMenu">
-                    <li><a href="">New Release</a></li>
+                    <li><a href="newGame.php">New Release</a></li>
                     <li><a href="popularGame.php">Popular Games</a></li>
                 </div>
             </div>
@@ -33,7 +33,7 @@ session_start();
             <div class="login">
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo $_SESSION['user'];
+                    echo "<button class='logOutBtn' onclick='logOutConfirm()'><i class='fa-solid fa-arrow-right-from-bracket'></i> ".$_SESSION['user']."</button>";
                 } else {
                     echo "<i class='fa-solid fa-arrow-right-to-bracket'></i>Login</div>";
                 }
@@ -70,7 +70,7 @@ session_start();
             </div>
             <div class="background2">
                 <div class="psIntro2">
-                    <button class="btn"><a href="https://www.playstation.com/en-ca" target="_bla">Find More</a></button>
+                    <button class="steambtn"><a href="https://www.playstation.com/en-ca" target="_bla">Connecting to Steam</a></button>
                 </div>
             </div>
         </div>
