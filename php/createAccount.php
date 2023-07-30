@@ -12,9 +12,9 @@ if (isset($_POST['submit'])) {
 
     // server information
 
-    $serverIP = "69.172.204.200";
-    $serverID = "ncsm1752_ncsm1752";
-    $serverPWD = "ncsm1990cdh";
+    $serverIP = "123";
+    $serverID = "nn";
+    $serverPWD = "nn";
     $dataBaseN = "ncsm1752_gameCC";
 
     $connect = mysqli_connect($serverIP, $serverID, $serverPWD, $dataBaseN);
