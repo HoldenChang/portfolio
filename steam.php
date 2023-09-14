@@ -20,7 +20,7 @@ session_start();
     <!-- Header (Menu)-->
     <div class="header">
         <nav class="menu">
-            <div class="logo"><a href="index.php">GameCC</a></div>
+            <div class="logo"><a href="mainPage.php">GameCC</a></div>
             <div class="games">Games
                 <div class="gSubMenu">
                     <li><a href="newGame.php">New Release</a></li>

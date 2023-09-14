@@ -9,7 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popular Game</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/mainPage.css">
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/popularGame.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@ session_start();
     <!-- Header (Menu)-->
     <div class="header">
         <nav class="menu">
-            <div class="logo"><a href="index.php">GameCC</a></div>
+            <div class="logo"><a href="mainPage.php">GameCC</a></div>
             <div class="games">Games
                 <div class="gSubMenu">
                     <li><a href="newGame.php">New Release</a></li>
